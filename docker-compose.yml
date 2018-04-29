@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    image: pi2garden-view
+    build: .
+    environment:
+      APP_ENV: dese
+    ports:
+      - "8091:80"
+    volumes:
+      - ./dist:/app
